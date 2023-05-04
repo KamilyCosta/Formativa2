@@ -1,0 +1,327 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#div1 h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#div2 h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#div3 h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    background-color: #001b44 ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+
+header {
+    height: 200px;
+    max-height: 200px;
+    background-color: #001b44;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#logo {
+    height: 180px;
+    padding: 15px 30px;
+    justify-content: center;
+}
+
+#container{
+    margin: 0;
+    display: column;
+    justify-content: center;
+}
+
+#menu-horizontal ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1a3d86;
+    overflow: hidden;
+}
+
+#menu-horizontal ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+#menu-horizontal li a:hover{
+    background-color: #2f28fb;
+    cursor: default;
+}
+
+/*******gráficos ******/
+#parte2{
+    display: flex;
+}
+
+#mapa{
+    padding-left: 150px;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 600px;
+    padding-top: 20px;
+}
+
+/*pizza*/
+#graficoPizza{
+    width: 900px;
+    height: 750px;
+}
+
+/*****tabela*****/
+#tabela-dados{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 35px;
+}
+
+th{
+    background-color: #1a3d86;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+}
+
+td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#linhas{
+    background-color: #DFE5F2;
+}
+
+/*********SOBRE************/
+
+#imagens1{
+    display: flex;
+    justify-content: center;
+}
+
+#imagens2{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#ConteudoSobre p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 30px;
+}
+
+#icones{
+  width: 350px;
+  height: 150px;
+}
+
+#imagem{
+    width: 150px;
+    height: 150px;
+}
+/*---------*/
+#conteudoEqui{
+    margin-bottom: 120px ;
+}
+
+#conteudoEqui h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    font-size: 25px;
+    color: #bc1127;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#conteudoEqui p, li, ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 20px 20px;
+}
+
+#conteudoEqui h2{
+    margin: 50px 20px 20px 20px;
+    color: #bc1127;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*********************************************RESPONSIVOOOOOOOOOOOOO****************************************************/
+/*CELULAR*/
+@media (max-width: 768px) {
+    body{
+        font-size: 20px;
+      }
+
+      #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      header{
+        flex-direction: column;
+        height: 400px;
+        max-width: 400px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      #menu-horizontal{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #menu-horizontal ul li a{
+        padding: 5px;  
+        font-size:20px;
+      }
+
+    #lista-menu-horizontal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mapa{
+        max-height: 500px ;
+        max-width: 328px ;
+        padding: 25px;
+    }
+
+    #parte2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    #graficoPizza{
+        max-width: 328px;
+        max-height: 400px;
+    }
+
+    #tabela-dados{
+        max-width: 80px;
+        max-height: 100px;
+        margin-top: 5px;
+    }
+
+    th{
+        padding: 5px;
+        max-width: 100px;
+        max-height: 80px;
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    td{
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    /*********SOBRE************/
+
+    #imagens1{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        justify-items: center;
+        padding: 0;
+        margin: 30px;
+    }
+
+    #imagens2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #icones{
+       margin: 20px;
+    }
+
+    #imagem{
+        margin: 20px auto;
+    }
+}
+
+/******************************************************************/
+/********RESPONSIVIDADE TABLET*************/
+@media (min-width: 768.02px) and (max-width:1023px) {
+    body{
+        font-size: 20px;
+      }
+      
+      #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: auto;
+      }
+    
+      header{
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #mapa{
+        max-height: 500px ;
+        max-width: 750px ;
+        padding-left: 30px;
+    }
+
+    #parte2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    #graficoPizza{
+        max-height: 500px ;
+        max-width: 750px ;
+        padding-left: 30px;
+    }
+
+    /*****sobre******/
+
+    #imagens2{
+        margin: 50px;
+    }
+
+    /******equipe****/
+    #conteudoEqui{
+        margin-bottom: 400px ;
+    }
+
+}

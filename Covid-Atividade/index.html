@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="icon" type="imagem/png" href="img/fotoL.png" />
+    <title>Covid19 - Brazil API</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="img/logo.png" alt="logo do site" />
+        </a>
+    </header>
+
+    <nav>
+        <div id="menu-horizontal">
+            <ul id="lista-menu-horizontal">
+                <li><a href="index.html">PÁGINA INICIAL</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="container">
+        <div id="div1">
+            <h2>Covid - 19 no Mundo</h2>
+            <div id="mapa"></div>
+        </div>
+
+        <div id="parte2">
+
+            <div id="div2">
+                <h2>Covid19 no Mundo - Status</h2>
+                <div id="graficoPizza"></div>
+            </div>
+
+            <div id="div3">
+            <h2>Covid - 19 no Brasil</h2>
+            <div id="tabelaInfo">
+                <table id="tabela-dados">
+                    <thead>
+                        <tr>
+                            <th>UF</th>
+                            <th>Estado</th>
+                            <th>Casos</th>
+                            <th>Suspeitos</th>
+                            <th>Mortes</th>
+                            <th>Data e hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="linhas"></tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Portal News Covid19 © - Todos os direitos reservados
+    </footer>
+
+
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</html>
